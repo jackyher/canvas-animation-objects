@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    <title>Canvas animation 2D</title>
+</head>
+<>
+    <header>
+        <nav class="navbar navbar-light navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand small-text">
+                    <img src="media/contenido-web.png" alt="" width="30" height="25" class="d-inline-block align-text-top"/>
+                    <span class="brand-with-image">Animaciones con objetos 2D</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container flex-column mt-3 shadow rounded-3 p-3">
+        <div class="d-flex justify-content-center flex-row mb-3">
+            <h1 class="mt-4 fs-3 fw-bold">Animaciones 2D con canvas</h1>
+        </div>
+        <div class="d-flex flex-column shadow-sm mb-1 p-3">
+            <div class="d-flex flex-row justify-content-around mb-5">
+                <div class="d-flex justify-content-center flex-column">
+                    <h5 class="d-flex justify-content-center underline">Un solo objeto</h5>
+                    <canvas class="border shadow mb-3" id="canvas"></canvas>
+                </div>
+                <div class="d-flex justify-content-center flex-column ml-3">
+                    <div id="text-input-container" class="d-flex align-items-center p-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">x</span>
+                            <span id="lblx" class="form-control" aria-label="Username" aria-describedby="basic-addon1"></span>
+                        </div>
+                    </div>
+                    <div id="text-input-container" class="d-flex align-items-center p-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">y</span>
+                            <span id="lbly" class="form-control" aria-label="Username" aria-describedby="basic-addon1"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around mb-3">
+                <div class="d-flex justify-content-center flex-column">
+                    <h5 class="d-flex justify-content-center underline">Multiobjetos</h5>
+                    <canvas class="border shadow mb-3" id="canvas2"></canvas>
+                </div>
+                <div class="d-flex justify-content-center flex-column ml-3">
+                    <table class="table table-striped"  id="circleTable" border="1">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">x</th>
+                            <th scope="col">y</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer container mt-4">
+        <div class="container text-center">
+            <p style="font-size: 0.85rem;">&copy; 2024 Todos los derechos reservados. Jacqueline Hernández.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
